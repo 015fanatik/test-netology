@@ -1,3 +1,4 @@
+new line
 # Local .terraform directories
 **/.terraform/*
 Будут проигнорированны все файлы в каталоге/каталогах .terraform 
