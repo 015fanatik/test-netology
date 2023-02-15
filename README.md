@@ -1,35 +1,36 @@
 # Local .terraform directories
-**/.terraform/*
-Будут проигнорированны все файлы в каталоге/каталогах .terraform 
-в не зависимости от расположения самого каталога .terraform
+#**/.terraform/*
+Будут проигнорированны все файлы в каталоге/каталогах .terraform  
+в не зависимости от расположения самого каталога .terraform  
 
 # .tfstate files
-*.tfstate
-*.tfstate.*
+#*.tfstate
+#*.tfstate.*
 Будут проигнорированны все файлы с расширением .tfstate и все файлы в имени которых присутствует .tfstate.
 
 # Crash log files
-crash.log
-crash.*.log
+#crash.log
+#crash.*.log
 Будет проигнорирован файл crash.log  и файлы crash.*.log с любыми символами вместо *
 
 # Exclude all .tfvars files, which are likely to contain sensitive data, such as
 # password, private keys, and other secrets. These should not be part of version 
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
-*.tfvars
-*.tfvars.json
+#*.tfvars
+#*.tfvars.json
 Будут проигнорированы  файлы с расширением .tfvars и файлы содержащие в названии .tfvars.json
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-Будут проигнорированны файлы override.tf и override.tf.json
-и файлы содержащие любые символы в названии до  _override.tf и _override.tf.json
-например 123_override.tf
+#override.tf
+#override.tf.json
+#*_override.tf
+#*_override.tf.json
+Будут проигнорированны файлы override.tf и override.tf.json  
+и файлы содержащие любые символы в названии до  _override.tf и _override.tf.json  
+например 123_override.tf  
+
 
 
 
@@ -40,75 +41,73 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore CLI configuration files
-.terraformrc
-terraform.rc
-Будут проигнорированны файлы .terraform и terraform.rc 
+#.terraformrc
+#terraform.rc
+
+Будут проигнорированны файлы .terraform и terraform.rc
 
 
 
 
 
 
-# Инструменты Git  
+# Инструменты Git
 
 
-# 1 Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea.  
+# 1 Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea.
 
 git show aefea
 
-Update CHANGELOG.md
-aefead2207ef7e2aa5dc81a34aedf0cad4c32545
+Update CHANGELOG.md  
+aefead2207ef7e2aa5dc81a34aedf0cad4c32545  
 
 
 # 2 Какому тегу соответствует коммит 85024d3?  
 
-git show 85024d3
-
-v0.12.23
+git show 85024d3  
+v0.12.23  
 
 # 3 Сколько родителей у коммита b8d720? Напишите их хеши.  
 
-git show b8d720f8^1
+git show b8d720f8^1  
+56cd7859e05c36c06b56d013b55a252d0bb7e158  
 
-56cd7859e05c36c06b56d013b55a252d0bb7e158
-
-git show b8d720f8^2
-
-9ea88f22fc6269854151c571162c5bcf958bee2b
+git show b8d720f8^2  
+9ea88f22fc6269854151c571162c5bcf958bee2b  
 
 # 4 Перечислите хеши и комментарии всех коммитов которые были сделаны между тегами v0.12.23 и v0.12.24  
 
 git log --oneline v0.12.23...v0.12.24
 
-33ff1c03bb (tag: v0.12.24) v0.12.24
-b14b74c493 [Website] vmc provider links
-3f235065b9 Update CHANGELOG.md
-6ae64e247b registry: Fix panic when server is unreachable
-5c619ca1ba website: Remove links to the getting started guide's old location
-06275647e2 Update CHANGELOG.md
-d5f9411f51 command: Fix bug when using terraform login on Windows
-4b6d06cc5d Update CHANGELOG.md
-dd01a35078 Update CHANGELOG.md
-225466bc3e Cleanup after v0.12.23 release
+33ff1c03bb (tag: v0.12.24) v0.12.24  
+b14b74c493 [Website] vmc provider links  
+3f235065b9 Update CHANGELOG.md  
+6ae64e247b registry: Fix panic when server is unreachable  
+5c619ca1ba website: Remove links to the getting started guide's old location  
+06275647e2 Update CHANGELOG.md  
+d5f9411f51 command: Fix bug when using terraform login on Windows  
+4b6d06cc5d Update CHANGELOG.md  
+dd01a35078 Update CHANGELOG.md  
+225466bc3e Cleanup after v0.12.23 release  
 
 # 5 Найдите коммит в котором была создана функция func providerSource, ее определение в коде выглядит так func providerSource(...)  
 # (вместо троеточия перечислены аргументы).  
 
-git log -S"func providerSource(" --oneline
+git log -S"func providerSource(" --oneline  
 8c928e8358 main: Consult local directories as potential mirrors of providers
 
-git show 8c928e8358
+git show 8c928e8358  
 8c928e83589d90a031f811fae52a81be7153e82f
 
 # 6 Найдите все коммиты в которых была изменена функция globalPluginDirs.  
 
-Ищем файл 
+Ищем файл  
 git grep "func globalPluginDirs("
 
 plugins.go:func globalPluginDirs() []string {
 
 
-Ищем коммиты с изменением этой функции
+Ищем коммиты с изменением этой функции  
 git log -s -L :globalPluginDirs:plugins.go --oneline
 
 78b1220558 Remove config.go and update things using its aliases  
