@@ -111,16 +111,17 @@ plugins.go:func globalPluginDirs() []string {
 Ищем коммиты с изменением этой функции
 git log -s -L :globalPluginDirs:plugins.go --oneline
 
-78b1220558 Remove config.go and update things using its aliases
-52dbf94834 keep .terraform.d/plugins for discovery
-41ab0aef7a Add missing OS_ARCH dir to global plugin paths
-66ebff90cd move some more plugin search path logic to command
-8364383c35 Push plugin discovery down into command package
+78b1220558 Remove config.go and update things using its aliases  
+52dbf94834 keep .terraform.d/plugins for discovery  
+41ab0aef7a Add missing OS_ARCH dir to global plugin paths  
+66ebff90cd move some more plugin search path logic to command  
+8364383c35 Push plugin discovery down into command package  
 
 
 # 7 Кто автор функции synchronizedWriters?
 
 git log -S synchronizedWriters Смотрим самый ранний комит.
+
 Martin Atkins
 
 
