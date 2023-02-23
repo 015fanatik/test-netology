@@ -128,6 +128,21 @@ Martin Atkins
 
 
 
+# Домашнее задание к занятию "Работа в терминале. Лекция 1"
+
+
+
+# С помощью базового файла конфигурации запустите Ubuntu 20.04 в VirtualBox посредством Vagrant:
+# Создайте директорию, в которой будут храниться конфигурационные файлы Vagrant. В ней выполните vagrant init. Замените содержимое Vagrantfile по умолчанию следующим:
+
+ # Vagrant.configure("2") do |config|
+ # config.vm.box = "bento/ubuntu-20.04"
+ # end
+ 
+# Выполнение в этой директории vagrant up установит провайдер VirtualBox для Vagrant, скачает необходимый образ и запустит виртуальную машину.
+# vagrant suspend выключит виртуальную машину с сохранением ее состояния (т.е., при следующем vagrant up будут запущены все процессы внутри, которые работали на момент вызова suspend), vagrant halt выключит виртуальную машину штатным образом.
+
+![screenshot1](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_1.jpg)
 
 
 
