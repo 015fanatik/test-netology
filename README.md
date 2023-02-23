@@ -132,7 +132,7 @@ Martin Atkins
 
 
 
-# С помощью базового файла конфигурации запустите Ubuntu 20.04 в VirtualBox посредством Vagrant:
+# 1 С помощью базового файла конфигурации запустите Ubuntu 20.04 в VirtualBox посредством Vagrant:
 # Создайте директорию, в которой будут храниться конфигурационные файлы Vagrant. В ней выполните vagrant init. Замените содержимое Vagrantfile по умолчанию следующим:
 
  # Vagrant.configure("2") do |config|
@@ -144,5 +144,10 @@ Martin Atkins
 
 ![screenshot1](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_1.jpg)
 
+# 2 Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей выделены. Какие ресурсы выделены по-умолчанию?
+
+![screenshot2](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_2.jpg)
+![screenshot3](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_3.jpg)
+![screenshot4](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_4.jpg)
 
 
