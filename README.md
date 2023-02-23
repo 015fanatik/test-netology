@@ -150,4 +150,20 @@ Martin Atkins
 ![screenshot3](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_3.jpg)
 ![screenshot4](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_4.jpg)
 
+# Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
+
+Добавить в конфиг
+
+config.vm.provider "virtualbox" do |v|
+  v.memory = 1024
+  v.cpus = 2
+end
+
+# Команда vagrant ssh из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
+
+![screenshot5](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_5.jpg)
+
+
+
+
 
