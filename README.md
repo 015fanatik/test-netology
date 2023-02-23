@@ -146,7 +146,7 @@ Martin Atkins
 ![screenshot3](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_3.jpg)
 ![screenshot4](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_4.jpg)
 
-# Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
+# 3 Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
 Добавить в конфиг
 
@@ -155,10 +155,24 @@ config.vm.provider "virtualbox" do |v|
   v.cpus = 2
 end
 
-# Команда vagrant ssh из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
+# 4 Команда vagrant ssh из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
 
 ![screenshot5](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_5.jpg)
 
+# 5 Ознакомьтесь с разделами man bash, почитайте о настройках самого bash:
+
+# какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
+
+![screenshot6](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_6.jpg)
+
+# что делает директива ignoreboth в bash?
+
+ignoreboth — использовать обе опции ‘ignorespace’ и ‘ignoredups’
+
+ignorespace — не сохранять строки начинающиеся с символа <пробел>
+ignoredups — не сохранять строки, совпадающие с последней выполненной командой
+
+# 6 В каких сценариях использования применимы скобки {} и на какой строчке man bash это описано?
 
 
 
