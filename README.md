@@ -165,7 +165,6 @@ end
 ![screenshot5](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_5.jpg)
 
 # 5 Ознакомьтесь с разделами man bash, почитайте о настройках самого bash:
-
 # какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
 
 ![screenshot6](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_6.jpg)
