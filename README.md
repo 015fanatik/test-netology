@@ -131,12 +131,14 @@ Martin Atkins
 # 1 С помощью базового файла конфигурации запустите Ubuntu 20.04 в VirtualBox посредством Vagrant:
 # Создайте директорию, в которой будут храниться конфигурационные файлы Vagrant. В ней выполните vagrant init. Замените содержимое Vagrantfile по умолчанию следующим:
 
- # Vagrant.configure("2") do |config|
- # config.vm.box = "bento/ubuntu-20.04"
- # end
+ Vagrant.configure("2") do |config|
+ 
+ config.vm.box = "bento/ubuntu-20.04"
+ 
+ end
  
 # Выполнение в этой директории vagrant up установит провайдер VirtualBox для Vagrant, скачает необходимый образ и запустит виртуальную машину.
-# vagrant suspend выключит виртуальную машину с сохранением ее состояния (т.е., при следующем vagrant up будут запущены все процессы внутри, которые работали на момент вызова suspend), vagrant halt выключит виртуальную машину штатным образом.
+# vagrant suspend выключит виртуальную машину с сохранением ее состояния (т.е., при следующем vagrant up будут запущены все процессы внутри, которые работали на момент # вызова suspend), vagrant halt выключит виртуальную машину штатным образом.
 
 ![screenshot1](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_1.jpg)
 
@@ -151,8 +153,11 @@ Martin Atkins
 Добавить в конфиг
 
 config.vm.provider "virtualbox" do |v|
+
   v.memory = 1024
+  
   v.cpus = 2
+  
 end
 
 # 4 Команда vagrant ssh из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
