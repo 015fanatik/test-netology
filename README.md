@@ -319,14 +319,72 @@ root@vagrant:/home/vagrant/11#
 с помощью команды env
 
 # 10 Используя man, опишите, что доступно по адресам /proc/<PID>/cmdline, /proc/<PID>/exe.
+ 
+ 
+/proc/<PID>/cmdline
+ 
+cmdline
+ 
+Этот файл содержит полную командную строку запуска процесса, кроме тех процессов, что полностью ушли в своппинг, а также тех, что превратились в зомби.
+ 
+ В этих двух случаях в файле ничего нет, то есть чтение этого файла вернет 0 символов. Аргументы командной строки в этом файле указаны как список строк, каждая из 
+ 
+ которых завешается нулевым символом, с добавочным нулевым байтом после последней строки.
 
 
+/proc/<PID>/exe
+ 
+ Под Linux 2.2 и 2.4 exe является символьной ссылкой, содержащей фактическое полное имя выполняемого файла.
+ 
+ Символьная ссылка exe может использоваться обычным образом - при попытке открыть exe будет открыт исполняемый файл.
+ 
+ Вы можете даже ввести /proc/[number]/exe чтобы запустить другую копию процесса такого же как и процесс с номером [число].
+ 
+Под Linux 2.0 и в более ранних версиях exe является указателем на запущенный файл и является символьной ссылкой. Вызов readlink(2) на этот специальный файл exe под Linux 2.0 и более ранних версий возвращает строку формата:
 
+[устройство]:индексный_дескриптор
 
+Например, строка [0301]:1502 означает индексный дескриптор 1502 на устройстве со старшим номером устройства 03 (IDE, MFM и т. д.) и младшим номером устройства 01 (первый раздел на первом диске).
 
+ 
+ # 11 Узнайте, какую наиболее старшую версию набора инструкций SSE поддерживает ваш процессор с помощью /proc/cpuinfo.
+ 
+ root@vagrant:/home/vagrant/11# grep sse /proc/cpuinfo
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d
 
+ 
+ # 12 При открытии нового окна терминала и vagrant ssh создаётся новая сессия и выделяется pty.
+Это можно подтвердить командой tty, которая упоминалась в лекции 3.2.
 
+Однако:
 
+vagrant@netology1:~$ ssh localhost 'tty'
+not a tty
+Почитайте, почему так происходит и как изменить поведение.
+ 
+ 
+ В случае выполения одиночной команды ssh на удаленном сервере не выделяется TTY
+Исправить это можно опцией -t, принудительное выделение псевдотерминала: ssh -t localhost 'tty'
+ 
+ 
+ # 13 Бывает, что есть необходимость переместить запущенный процесс из одной сессии в другую. Попробуйте сделать это, воспользовавшись reptyr.
+ Например, так можно перенести в screen процесс, который вы запустили по ошибке в обычной SSH-сессии.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ # 14 sudo echo string > /root/new_file не даст выполнить перенаправление под обычным пользователем, так как перенаправлением занимается процесс shell, который запущен без sudo под вашим пользователем. Для решения этой проблемы можно использовать конструкцию echo string | sudo tee /root/new_file. Узнайте, что делает команда tee и почему в отличие от sudo echo команда с sudo tee будет работать.
+ 
+ 
+tee - читает из стандартного ввода и записывает как в стандартный вывод, в один или несколько файлов одновременно.
+Так как shell работает в том переменном окружении пользователя в котором он запущен то перенаправить вывод в файл принадлежащий другому пользователю нельзя было.
+Во втором случае команда tee запущена от root, поэтому были права на запись.
 
 
 
