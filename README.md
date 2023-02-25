@@ -373,6 +373,9 @@ not a tty
  
  
  
+Записать 0 в  /proc/sys/kernel/yama/ptrace_scope
+ 
+ 
  
  
  
