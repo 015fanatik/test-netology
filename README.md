@@ -222,8 +222,9 @@ touch {1..100000}
 cd - это shell builtin команда, то есть команда, которая вызывается напрямую в shell, а не как внешняя исполняемая.
 
 сd во всех случаях является встроенной командой, так как смена текущей директории в рамках дочернего процесса не приведет ни к каким последствиям на уровне командной
+оболочки. 
 
-оболочки. Смена текущей директории в рамках дочерней командной оболочки также не влияет на текущую директорию родительской командной оболочки
+Смена текущей директории в рамках дочерней командной оболочки также не влияет на текущую директорию родительской командной оболочки
 
 
 
@@ -291,7 +292,7 @@ root@vagrant:~#
 # 8 Получится ли в качестве входного потока для pipe использовать только stderr команды, не потеряв отображение stdout на pty?
 Напоминаем: по умолчанию через pipe передаётся только stdout команды слева от | на stdin команды справа. Это можно сделать, поменяв стандартные потоки местами через промежуточный новый дескриптор, который вы научились создавать в предыдущем вопросе.
 
-Можно при помощи конструкции  >&1 1>&2 2>&3 ( 3 промежуточный дискриптор ) 
+Можно при помощи конструкции  3>&1 1>&2 2>&3 ( 3 промежуточный дискриптор ) 
 
 
 
@@ -309,6 +310,8 @@ dir123
 132
 234cat: test5: No such file or directory
 root@vagrant:/home/vagrant/11#
+
+В данном случа  grep No найдёт "No" из ошибки No such file or directory.
 
 
 # 9  Что выведет команда cat /proc/$$/environ? Как ещё можно получить аналогичный по содержанию вывод?
@@ -353,6 +356,7 @@ cmdline
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt md_clear flush_l1d
 
+Ответ: sse4_2 .
  
  # 12 При открытии нового окна терминала и vagrant ssh создаётся новая сессия и выделяется pty.
 Это можно подтвердить командой tty, которая упоминалась в лекции 3.2.
@@ -375,7 +379,28 @@ not a tty
  
 Записать 0 в  /proc/sys/kernel/yama/ptrace_scope
  
+ Start a long running process, e.g. top
  
+Background the process with CTRL-Z
+
+Resume the process in the background: bg
+
+Display your running background jobs with jobs -l, this should look like this:
+
+[1]+  4711 Stopped (signal)        top
+
+(The -l in jobs -l makes sure you'll get the PID)
+
+Disown the jobs from the current parent with disown top. After that, jobs will not show the job any more, but ps -a will.
+
+Start your terminal multiplexer of choice, e.g. tmux
+
+Reattach to the backgrounded process: reptyr 4711
+
+Detach your terminal multiplexer (e.g. CTRL-A D) and close ssh
+
+Reconnect ssh, attach to your multiplexer (e.g. tmux attach), rejoice!
+
  
  
  
