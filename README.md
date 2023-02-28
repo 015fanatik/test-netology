@@ -258,7 +258,8 @@ root@vagrant:/home/vagrant/11#
 
 root@vagrant:/home/vagrant/11# ls
 test
-root@vagrant:/home/vagrant/11# cat test > test2
+
+root@vagrant:/home/vagrant/11# cat <test > test2
 
 root@vagrant:/home/vagrant/11#
 
