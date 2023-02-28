@@ -252,14 +252,13 @@ root           1  0.0  0.6 169456 13000 ?        Ss   08:38   0:02 /sbin/init
 
 # 5 Получится ли одновременно передать команде файл на stdin и вывести её stdout в другой файл? Приведите работающий пример.
 
-root@vagrant:/home/vagrant/11# touch test
+root@vagrant:/home/vagrant/11# touch test 
 
-root@vagrant:/home/vagrant/11#
+root@vagrant:/home/vagrant/11# ls 
 
-root@vagrant:/home/vagrant/11# ls
 test
 
-root@vagrant:/home/vagrant/11# cat <test > test2
+root@vagrant:/home/vagrant/11# cat <test > test2 
 
 root@vagrant:/home/vagrant/11#
 
