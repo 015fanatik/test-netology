@@ -319,7 +319,8 @@ root@vagrant:~#
 
 
 
-root@vagrant:/home/vagrant/11# cat test{1..5} 3>&1 1>&2 2>&3 | grep No
+root@vagrant:/home/vagrant/11# cat test{1..5} 3>&1 1>&2 2>&3 | grep No 
+
 123 
 
 123 
