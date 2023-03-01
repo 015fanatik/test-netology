@@ -1,3 +1,21 @@
+
+
+
+
+[Managed Disks](# 1 Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea.)
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Local .terraform directories
 #**/.terraform/*
 
