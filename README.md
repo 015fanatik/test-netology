@@ -2,7 +2,7 @@
 
 
 
-[Инструменты git](#https://github.com/015fanatik/devops-netology-инструменты-git)
+[Инструменты git](#-инструменты git)
 
 
 
