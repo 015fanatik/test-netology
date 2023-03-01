@@ -320,18 +320,30 @@ root@vagrant:~#
 
 
 root@vagrant:/home/vagrant/11# cat test{1..5} 3>&1 1>&2 2>&3 | grep No
-123
-123
-123
-123
-123
-134
-dir123
-123
-123123
-123
-132
-234cat: test5: No such file or directory
+123 
+
+123 
+
+123 
+
+123 
+
+123 
+
+134 
+
+dir123 
+
+123 
+
+123123 
+
+123 
+
+132 
+
+234cat: test5: No such file or directory 
+
 root@vagrant:/home/vagrant/11#
 
 В данном случа  grep No найдёт "No" из ошибки No such file or directory.
