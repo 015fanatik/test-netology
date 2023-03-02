@@ -530,3 +530,16 @@ root@vagrant:~# dpkg -L bpfcc-tools | grep sbin/opensnoop
 # На какие файлы вы увидели вызовы группы open за первую секунду работы утилиты? Воспользуйтесь пакетом bpfcc-tools для Ubuntu 20.04. Дополнительные сведения по установке по ссылке.
 
 ![screenshot13](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_13.jpg) 
+  
+  
+# 6 Какой системный вызов использует uname -a? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в /proc и где можно узнать версию ядра и релиз ОС.
+  
+uname
+
+  ![screenshot14](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_14.jpg)
+
+  
+  
+  
+  
+  
