@@ -529,4 +529,4 @@ root@vagrant:~# dpkg -L bpfcc-tools | grep sbin/opensnoop
 
 # На какие файлы вы увидели вызовы группы open за первую секунду работы утилиты? Воспользуйтесь пакетом bpfcc-tools для Ubuntu 20.04. Дополнительные сведения по установке по ссылке.
 
-
+![screenshot13](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_13.jpg) 
