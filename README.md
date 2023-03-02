@@ -473,7 +473,7 @@ tee - читает из стандартного ввода и записыва�
   
  chdir ("/tmp")
 
-
+![screenshot9](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_9.jpg)
 
 
 
