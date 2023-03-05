@@ -570,9 +570,9 @@ root@netology1:~#
  # 9 Используя -o stat для ps, определите, какой наиболее часто встречающийся статус у процессов в системе. В man ps изучите (/PROCESS STATE CODES), что значат дополнительные к основной заглавной букве статуса процессов. Его можно не учитывать при расчёте (считать S, Ss или Ssl равнозначными).
   
   
-  ![screenshot15](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_15.jpg)
+  ![screenshot15](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_15.png)
   
-  ![screenshot16](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_16.jpg)
+  ![screenshot16](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_16.png)
   
   
   
