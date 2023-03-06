@@ -616,5 +616,9 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
   
   
   
+  # 4 Можно ли по выводу dmesg понять, осознаёт ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации? 
   
-
+  Да можно.
+  
+  
+  ![vbox.png](https://github.com/015fanatik/devops-netology/blob/main/vbox.png)
