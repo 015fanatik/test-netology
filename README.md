@@ -590,7 +590,12 @@ root@netology1:~#
 
 
 
-  ![unit.png](https://github.com/015fanatik/devops-netology/blob/main/unit.png)
+  ![unit.png](https://github.com/015fanatik/devops-netology/blob/main/unit.png) 
+   
+  ![sysremctl.png](https://github.com/015fanatik/devops-netology/blob/main/sysremctl.png) 
+   
+  ![status.png](https://github.com/015fanatik/devops-netology/blob/main/status.png)
+  
   
   
   
