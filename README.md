@@ -599,7 +599,7 @@ root@netology1:~#
   
   # 2  Изучите опции node_exporter и вывод /metrics по умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети. 
    
-   
+   ![metrics.png](https://github.com/015fanatik/devops-netology/blob/main/metrics.png)
    
    ![node_exporter.png](https://github.com/015fanatik/devops-netology/blob/main/node_exporter.png)
   
