@@ -590,7 +590,7 @@ root@netology1:~#
 
 
 
-  
+  ![unit.png](https://github.com/015fanatik/devops-netology/blob/main/unit.png)
   
   
   
