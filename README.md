@@ -583,6 +583,7 @@ root@netology1:~#
 # 1 На лекции вы познакомились с node_exporter. 
   
 ~~~~
+  
  В демонстрации его исполняемый файл запускался в background. 
   
  Этого достаточно для демо, но не для настоящей production-системы, где процессы должны находиться под внешним управлением. 
@@ -593,7 +594,8 @@ root@netology1:~#
   
  предусмотрите возможность добавления опций к запускаемому процессу через внешний файл (посмотрите, например, на systemctl cat cron); 
   
- удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.
+ удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается. 
+  
 ~~~
 
 
@@ -663,7 +665,8 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
    
   ![ssh.png](https://github.com/015fanatik/devops-netology/blob/main/ssh.png)
   
-  https://interface31.ru/tech_it/2022/09/linux---nachinayushhim-chto-takoe-oom-killer-i-kak-on-rabotaet.html
+  https://interface31.ru/tech_it/2022/09/linux---nachinayushhim-chto-takoe-oom-killer-i-kak-on-rabotaet.html 
+  
   
   
   
