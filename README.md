@@ -647,3 +647,21 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
   # 7 Найдите информацию о том, что такое :(){ :|:& };:. Запустите эту команду в своей виртуальной машине Vagrant с Ubuntu 20.04 (это важно, поведение в других ОС не проверялось). Некоторое время всё будет плохо, после чего (спустя минуты) — ОС должна стабилизироваться. Вызов dmesg расскажет, какой механизм помог автоматической стабилизации.
 Как настроен этот механизм по умолчанию, и как изменить число процессов, которое можно создать в сессии?
 
+  
+  ![fork_bomb1.png](https://github.com/015fanatik/devops-netology/blob/main/fork_bomb1.png) 
+  
+   
+  ![sb.png](https://github.com/015fanatik/devops-netology/blob/main/sb.png) 
+   
+  ![fork_bomb2.png](https://github.com/015fanatik/devops-netology/blob/main/fork_bomb2.png)
+   
+  ![ssh.png](https://github.com/015fanatik/devops-netology/blob/main/ssh.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
