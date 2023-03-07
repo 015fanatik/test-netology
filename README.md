@@ -657,6 +657,7 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
    
   ![ssh.png](https://github.com/015fanatik/devops-netology/blob/main/ssh.png)
   
+  https://interface31.ru/tech_it/2022/09/linux---nachinayushhim-chto-takoe-oom-killer-i-kak-on-rabotaet.html
   
   
   
