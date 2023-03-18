@@ -674,15 +674,22 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
   
   Шаг 1. Работа c HTTP через telnet.
 
-Подключитесь утилитой telnet к сайту stackoverflow.com:
+Подключитесь утилитой telnet к сайту stackoverflow.com: 
+
 telnet stackoverflow.com 80
 
-Отправьте HTTP-запрос:
-GET /questions HTTP/1.0
-HOST: stackoverflow.com
-[press enter]
-[press enter]
+Отправьте HTTP-запрос: 
+
+GET /questions HTTP/1.0 
+
+HOST: stackoverflow.com 
+
+[press enter] 
+
+[press enter] 
+
 В ответе укажите полученный HTTP-код и поясните, что он означает. 
+
    
    
    
