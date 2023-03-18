@@ -706,20 +706,26 @@ HOST: stackoverflow.com
 
 Шаг 4. Какому провайдеру принадлежит ваш IP-адрес? Какой автономной системе AS? Воспользуйтесь утилитой whois.
   
-IP-диапазон:
-5.164.0.0/14 
+
+route:          5.165.136.0/22 
   
-Провайдер:
-ER-Telecom 
+origin:         AS49048 
   
-Организация:
-ER-Telecom 
+org:            ORG-CHTB4-RIPE 
   
-AS Organization:
-JSC ER-Telecom Holding 
+descr:          CJSC "ER-Telecom Holding" Tver' branch 
   
-AS Number:
-49048
+descr:          Tver', Russia 
+  
+mnt-by:         RAID-MNT 
+  
+created:        2012-08-05T11:24:37Z 
+  
+last-modified:  2012-08-05T11:24:37Z 
+  
+source:         RIPE 
+  
+
 
 Шаг 5. Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой traceroute.
   
