@@ -734,6 +734,8 @@ source:         RIPE
 
 Шаг 6. Повторите задание 5 в утилите mtr. На каком участке наибольшая задержка — delay?
   
+  ![mtr.png](https://github.com/015fanatik/devops-netology/blob/main/mtr.png)
+  
 
 Шаг 7. Какие DNS-сервера отвечают за доменное имя dns.google? Какие A-записи? Воспользуйтесь утилитой dig.
 
