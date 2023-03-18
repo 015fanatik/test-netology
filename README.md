@@ -741,6 +741,8 @@ source:         RIPE
   
   ![dig.png](https://github.com/015fanatik/devops-netology/blob/main/dig.png)
 
-Шаг 8. Проверьте PTR записи для IP-адресов из задания 7. Какое доменное имя привязано к IP? Воспользуйтесь утилитой dig.
+Шаг 8. Проверьте PTR записи для IP-адресов из задания 7. Какое доменное имя привязано к IP? Воспользуйтесь утилитой dig. 
+    
   
+  ![dig2.png](https://github.com/015fanatik/devops-netology/blob/main/dig2.png)
   
