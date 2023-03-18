@@ -707,13 +707,17 @@ HOST: stackoverflow.com
 Шаг 4. Какому провайдеру принадлежит ваш IP-адрес? Какой автономной системе AS? Воспользуйтесь утилитой whois.
   
 IP-диапазон:
-5.164.0.0/14
+5.164.0.0/14 
+  
 Провайдер:
-ER-Telecom
+ER-Telecom 
+  
 Организация:
-ER-Telecom
+ER-Telecom 
+  
 AS Organization:
-JSC ER-Telecom Holding
+JSC ER-Telecom Holding 
+  
 AS Number:
 49048
 
