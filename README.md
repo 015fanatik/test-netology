@@ -706,10 +706,24 @@ HOST: stackoverflow.com
 
 Шаг 4. Какому провайдеру принадлежит ваш IP-адрес? Какой автономной системе AS? Воспользуйтесь утилитой whois.
   
+IP-диапазон:
+5.164.0.0/14
+Провайдер:
+ER-Telecom
+Организация:
+ER-Telecom
+AS Organization:
+JSC ER-Telecom Holding
+AS Number:
+49048
 
 Шаг 5. Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой traceroute.
+  
+![traceroute.png](https://github.com/015fanatik/devops-netology/blob/main/traceroute.png)
+  
 
 Шаг 6. Повторите задание 5 в утилите mtr. На каком участке наибольшая задержка — delay?
+  
 
 Шаг 7. Какие DNS-сервера отвечают за доменное имя dns.google? Какие A-записи? Воспользуйтесь утилитой dig.
 
