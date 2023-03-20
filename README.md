@@ -691,7 +691,9 @@ HOST: stackoverflow.com
 В ответе укажите полученный HTTP-код и поясните, что он означает. 
 
    
-   
+ ![403.png](https://github.com/015fanatik/devops-netology/blob/main/403.png)   
+ 
+ HTTP 403 Forbidden — стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен. Сервер понял запрос, но не выполнит его.
    
   
 
