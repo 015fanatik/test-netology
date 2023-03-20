@@ -705,12 +705,12 @@ HOST: stackoverflow.com
 приложите скриншот консоли браузера в ответ.  
 
 
-  ![f12.png](https://github.com/015fanatik/devops-netology/blob/main/ip.png) 
+  ![f12.png](https://github.com/015fanatik/devops-netology/blob/main/f12.png) 
   
    
     
     
-  ![f12_2.png](https://github.com/015fanatik/devops-netology/blob/main/ip.png)
+  ![f12_2.png](https://github.com/015fanatik/devops-netology/blob/main/f12_2.png)
    
    
   
