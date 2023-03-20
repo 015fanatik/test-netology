@@ -702,7 +702,15 @@ HOST: stackoverflow.com
 найдите первый ответ HTTP-сервера, откройте вкладку Headers;
 укажите в ответе полученный HTTP-код;
 проверьте время загрузки страницы и определите, какой запрос обрабатывался дольше всего;
-приложите скриншот консоли браузера в ответ. 
+приложите скриншот консоли браузера в ответ.  
+
+
+  ![f12.png](https://github.com/015fanatik/devops-netology/blob/main/ip.png) 
+  
+   
+    
+    
+  ![f12_2.png](https://github.com/015fanatik/devops-netology/blob/main/ip.png)
    
    
   
